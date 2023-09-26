@@ -8,6 +8,9 @@ cd "$(dirname "$0")/.."
 EXEC_ARGS=("${@}")
 shift "${#}"
 
+TEMPLATECONF="$(pwd)/sources/meta-develer/conf/templates/default"
+export TEMPLATECONF
+
 set +eu
 . sources/poky/oe-init-build-env
 set -eu
