@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it --entrypoint /bin/bash -v $(pwd):/bsp --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun bsp-builder
