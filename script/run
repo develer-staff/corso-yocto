@@ -12,5 +12,7 @@ set +eu
 . sources/poky/oe-init-build-env
 set -eu
 
+cp ../local.conf conf/
+
 # shellcheck disable=SC2048
 exec ${EXEC_ARGS[*]}
